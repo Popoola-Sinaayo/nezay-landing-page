@@ -729,6 +729,7 @@ section .text p {
     border-radius: 16px;
     padding: 28px 24px;
     color: #fff;
+    text-align: center;
     font-family: var(--font-main);
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -755,6 +756,7 @@ section .text p {
 .feature-card-icon {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
 }
