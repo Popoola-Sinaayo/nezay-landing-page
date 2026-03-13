@@ -865,6 +865,11 @@ section .text p {
     section .text h2 {
         font-size: 2rem;
     }
+    .nezay-header .btn-get-started { 
+        font-size: 12px;
+        min-width: 80px;
+        /* width: 80px; */
+    }
 }
 
 /* About Us – soft green throughout (same as Featured) */
