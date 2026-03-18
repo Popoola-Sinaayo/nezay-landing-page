@@ -1092,11 +1092,34 @@ section .text p {
 }
 
 .nezay-nav-center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    position: static;
+    transform: none;
     z-index: 1;
+}
+
+/* Header CTA uses same styling as hero "Get Started" */
+.hero-header-cta {
+    margin-left: 18px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* Header layout: logo left, nav centered, CTA right */
+.nezay-hero .nezay-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+.nezay-hero .nezay-nav-center {
+    justify-self: center;
+}
+
+.nezay-hero .hero-header-cta {
+    justify-self: end;
 }
 
 .nezay-header-spacer {
@@ -1157,6 +1180,11 @@ section .text p {
     transition: background 0.2s, box-shadow 0.2s;
     font-family: var(--font-main);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    line-height: 1;
 }
 
 .hero-btn-get-started:hover {
@@ -1523,12 +1551,20 @@ section .text p {
         padding-bottom: 12px;
     }
 
+    .nezay-hero .nezay-header {
+        display: flex;
+    }
+
     .nezay-nav-center {
         position: static;
         transform: none;
         order: 3;
         width: 100%;
         justify-content: center;
+    }
+
+    .hero-header-cta {
+        display: none;
     }
 
     .nezay-nav-center ul {
