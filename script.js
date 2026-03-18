@@ -14,6 +14,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// FAQ accordion – retractable/expandable
+document.querySelectorAll(".faq-item").forEach((item) => {
+    const btn = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+    if (!btn || !answer) return;
+
+    btn.addEventListener("click", () => {
+        const isOpen = item.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", isOpen);
+        answer.hidden = !isOpen;
+    });
+});
+
 // Active quote Style
 const quotes = document.querySelectorAll('.quotes-group .quote');
 
