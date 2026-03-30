@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | Nezay</title>
+    <meta name="description" content="Contact Nezay for inquiries about fintech and crypto-to-Naira services.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-900: #124734;
+            --brand-800: #1b5e43;
+            --brand-100: #eaf7ef;
+            --brand-050: #f4fbf7;
+            --text-muted: #4d6a5d;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: linear-gradient(180deg, var(--brand-050) 0%, #fff 40%, var(--brand-050) 100%);
+            color: var(--brand-900);
+        }
+        .wrap {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 36px 20px 56px;
+        }
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+        .topbar a {
+            color: var(--brand-800);
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid rgba(27, 94, 67, 0.18);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 12px 26px rgba(18, 71, 52, 0.1);
+        }
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(1.7rem, 2.8vw, 2.3rem);
+            line-height: 1.2;
+        }
+        p {
+            margin: 0 0 18px;
+            color: var(--text-muted);
+        }
+        label {
+            display: block;
+            margin: 12px 0 6px;
+            font-weight: 600;
+        }
+        input, textarea {
+            width: 100%;
+            border: 1px solid rgba(27, 94, 67, 0.25);
+            border-radius: 10px;
+            padding: 12px 14px;
+            font: inherit;
+        }
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        button {
+            margin-top: 14px;
+            border: 0;
+            border-radius: 999px;
+            padding: 12px 24px;
+            font: inherit;
+            font-weight: 700;
+            color: #fff;
+            background: linear-gradient(145deg, #2c7a5a, #1b5e43);
+            cursor: pointer;
+        }
+        button:hover { filter: brightness(1.05); }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="topbar">
+            <a href="index.html">Nezay</a>
+            <a href="index.html">Back to Home</a>
+        </div>
+        <main class="card">
+            <h1>Contact Us</h1>
+            <p>Send your enquiry and we will respond via email.</p>
+            <form id="contact-form">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+                <label for="enquiry">Enquiry</label>
+                <textarea id="enquiry" name="enquiry" required placeholder="Write your message..."></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+
+    <script>
+        const form = document.getElementById("contact-form");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value.trim();
+            const enquiry = document.getElementById("enquiry").value.trim();
+            const subject = encodeURIComponent("Nezay Contact Enquiry");
+            const body = encodeURIComponent("Sender Email: " + email + "\n\nEnquiry:\n" + enquiry);
+            window.location.href = "mailto:nezayinnovations@gmail.com?subject=" + subject + "&body=" + body;
+        });
+    </script>
+</body>
+</html>
