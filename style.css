@@ -10,9 +10,9 @@ html, body {
 }
 
 :root {
-    --font-main : 'Poppins', sans-serif;
-    --font-secondary: 'Integral CF Regular', sans-serif;
-    --font-third: "Helvetica Neue Medium Extended";
+    --font-main : 'Inter', sans-serif;
+    --font-secondary: 'Manrope', sans-serif;
+    --font-third: 'Manrope', sans-serif;
 }
 
 /* Start Components */
