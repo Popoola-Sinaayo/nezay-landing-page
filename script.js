@@ -37,3 +37,24 @@ quotes.forEach(quote => {
         quote.classList.add('active');
     });
 });
+
+// Mobile nav toggle (hamburger)
+const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+const mainNavigation = document.querySelector("#main-navigation");
+
+if (mobileNavToggle && mainNavigation) {
+    mobileNavToggle.addEventListener("click", () => {
+        const isOpen = mainNavigation.classList.toggle("is-open");
+        mobileNavToggle.classList.toggle("is-open", isOpen);
+        mobileNavToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    // Close menu after selecting an item on mobile
+    mainNavigation.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            mainNavigation.classList.remove("is-open");
+            mobileNavToggle.classList.remove("is-open");
+            mobileNavToggle.setAttribute("aria-expanded", "false");
+        });
+    });
+}
