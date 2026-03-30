@@ -1,0 +1,109 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Realistic hand with security phone</title>
+  <desc id="desc">Dark hand holding a phone with security, bill payment, and crypto-to-fiat swap UI in neon green.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="50" y1="60" x2="1150" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D7B4E"/>
+      <stop offset="0.45" stop-color="#0F472F"/>
+      <stop offset="1" stop-color="#09251D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(655 336) rotate(18) scale(560 360)">
+      <stop stop-color="#4FFF9D" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#4FFF9D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="phoneBody" x1="364" y1="88" x2="710" y2="724" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101719"/>
+      <stop offset="1" stop-color="#070D0F"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="400" y1="152" x2="676" y2="666" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E402F"/>
+      <stop offset="1" stop-color="#0A2F22"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="430" y1="250" x2="690" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2CAA66"/>
+      <stop offset="1" stop-color="#00FF66"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFF39A"/>
+      <stop offset="1" stop-color="#C89A15"/>
+    </linearGradient>
+    <filter id="drop" x="-30%" y="-30%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#02110B" flood-opacity="0.56"/>
+    </filter>
+  </defs>
+
+  <rect x="40" y="60" width="1120" height="700" rx="42" fill="url(#bg)"/>
+  <rect x="40" y="60" width="1120" height="700" rx="42" fill="url(#glow)"/>
+  <rect x="40" y="60" width="1120" height="700" rx="42" stroke="#8CFFD0" stroke-opacity="0.2"/>
+
+  <g opacity="0.18">
+    <path d="M40 190H1160M40 320H1160M40 450H1160M40 580H1160M40 710H1160" stroke="#9FFFD6"/>
+    <path d="M180 60V760M330 60V760M480 60V760M630 60V760M780 60V760M930 60V760" stroke="#9FFFD6"/>
+  </g>
+
+  <!-- Hand -->
+  <g filter="url(#drop)">
+    <path d="M132 714C124 656 150 582 210 540L307 474C333 456 366 448 398 452L515 468C563 475 603 504 624 549L653 612C666 640 642 672 611 672H378C350 672 327 693 327 721V760H184C158 760 138 740 132 714Z" fill="#2A1A14"/>
+    <path d="M615 528L716 486C753 470 794 493 806 531L826 595C837 630 811 666 774 668L665 674" fill="#301F18"/>
+    <path d="M631 532L720 497C748 486 779 501 788 529L804 583C812 607 794 632 769 634L680 640" stroke="#533528" stroke-opacity="0.45"/>
+    <path d="M208 588L262 548C282 533 309 532 330 545L384 579" stroke="#513428" stroke-opacity="0.5" stroke-width="7" stroke-linecap="round"/>
+    <path d="M305 530L345 500C364 486 390 487 407 501L448 534" stroke="#513428" stroke-opacity="0.5" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Phone -->
+  <g filter="url(#drop)">
+    <rect x="348" y="82" width="382" height="654" rx="62" fill="url(#phoneBody)" stroke="#9AFFD8" stroke-opacity="0.28" stroke-width="2"/>
+    <rect x="390" y="152" width="298" height="538" rx="36" fill="url(#screen)" stroke="#A2FFDC" stroke-opacity="0.22"/>
+    <rect x="500" y="112" width="78" height="8" rx="4" fill="#D0FFE9" fill-opacity="0.3"/>
+    <circle cx="539" cy="711" r="8" fill="#ABFFE0" fill-opacity="0.4"/>
+  </g>
+
+  <!-- Status icons -->
+  <circle cx="450" cy="214" r="24" fill="#30B764"/>
+  <rect x="439" y="205" width="22" height="16" rx="3" fill="#D8FFE8"/>
+  <path d="M444 205V198C444 193 448 189 453 189C458 189 462 193 462 198V205" stroke="#D8FFE8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="628" cy="214" r="24" fill="#30B764"/>
+  <path d="M617 215L624 222L639 206" stroke="#D8FFE8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Chart area -->
+  <rect x="430" y="252" width="218" height="138" rx="14" fill="#0D2C21" stroke="#86FFC9" stroke-opacity="0.28"/>
+  <path d="M448 356L480 330L510 312L548 285L588 260L628 236" stroke="#A3FFD9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M622 236L628 236L625 230" stroke="#A3FFD9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="448" y="340" width="24" height="16" fill="url(#bar)" fill-opacity="0.7"/>
+  <rect x="484" y="328" width="24" height="28" fill="url(#bar)" fill-opacity="0.75"/>
+  <rect x="520" y="314" width="24" height="42" fill="url(#bar)" fill-opacity="0.8"/>
+  <rect x="556" y="298" width="24" height="58" fill="url(#bar)" fill-opacity="0.86"/>
+  <rect x="592" y="276" width="24" height="80" fill="url(#bar)"/>
+
+  <!-- Services row -->
+  <g>
+    <circle cx="448" cy="440" r="26" fill="#0D5A3E"/>
+    <text x="438" y="448" fill="#CFFFF0" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="700">B</text>
+    <text x="462" y="449" fill="#8FFFD1" font-family="Poppins, Arial, sans-serif" font-size="10">ills</text>
+    <circle cx="540" cy="440" r="34" fill="#2CB764"/>
+    <rect x="525" y="428" width="30" height="22" rx="4" fill="#DCFFEC"/>
+    <path d="M530 428V419C530 412 535 407 542 407C549 407 554 412 554 419V428" stroke="#DCFFEC" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="632" cy="440" r="26" fill="#0D5A3E"/>
+    <text x="618" y="446" fill="#CFFFF0" font-family="Poppins, Arial, sans-serif" font-size="14" font-weight="700">Swap</text>
+  </g>
+
+  <!-- Detail lines -->
+  <rect x="430" y="498" width="216" height="8" rx="4" fill="#9DFFDA" fill-opacity="0.5"/>
+  <rect x="430" y="520" width="188" height="8" rx="4" fill="#9DFFDA" fill-opacity="0.35"/>
+  <rect x="430" y="542" width="206" height="8" rx="4" fill="#9DFFDA" fill-opacity="0.24"/>
+
+  <rect x="430" y="590" width="216" height="44" rx="22" fill="#1FAC57"/>
+  <text x="486" y="618" fill="#E9FFF5" font-family="Poppins, Arial, sans-serif" font-size="15" font-weight="700">Secure Payments</text>
+
+  <!-- Coins -->
+  <g filter="url(#drop)">
+    <ellipse cx="930" cy="690" rx="94" ry="24" fill="#111A12" fill-opacity="0.7"/>
+    <ellipse cx="900" cy="668" rx="54" ry="15" fill="#D6AE2E"/>
+    <ellipse cx="900" cy="664" rx="54" ry="15" fill="url(#coin)"/>
+    <ellipse cx="970" cy="648" rx="54" ry="15" fill="#D6AE2E"/>
+    <ellipse cx="970" cy="644" rx="54" ry="15" fill="url(#coin)"/>
+    <ellipse cx="1036" cy="670" rx="54" ry="15" fill="#D6AE2E"/>
+    <ellipse cx="1036" cy="666" rx="54" ry="15" fill="url(#coin)"/>
+  </g>
+</svg>
